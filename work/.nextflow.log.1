@@ -1,0 +1,14 @@
+may-19 14:32:31.131 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /path/to/mergeOtuTables.nf --day_file /path/to/filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv --night_file /path/to/filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv
+may-19 14:32:31.291 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
+may-19 14:32:31.335 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+may-19 14:32:31.374 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+may-19 14:32:31.376 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+may-19 14:32:31.381 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+may-19 14:32:31.400 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+may-19 14:32:31.417 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/nathalia/.nextflow/scm
+may-19 14:32:31.439 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Cannot find script file: /path/to/mergeOtuTables.nf
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:528)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:326)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

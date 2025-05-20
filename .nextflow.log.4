@@ -1,0 +1,76 @@
+may-19 14:57:40.112 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf --day_file /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/samples/filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv --night_file /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/samples/filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv --output_dir/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/results
+may-19 14:57:40.282 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
+may-19 14:57:40.325 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+may-19 14:57:40.368 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+may-19 14:57:40.369 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+may-19 14:57:40.373 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+may-19 14:57:40.392 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+may-19 14:57:40.480 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
+may-19 14:57:40.503 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@23ee75c5] - activable => nextflow.secret.LocalSecretsProvider@23ee75c5
+may-19 14:57:40.621 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+may-19 14:57:40.649 [main] DEBUG nextflow.cli.CmdRun - Launching `/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf` [sharp_turing] DSL2 - revision: 58b233d437
+may-19 14:57:40.653 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+may-19 14:57:40.654 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+may-19 14:57:40.755 [main] DEBUG nextflow.Session - Session UUID: 5dfd41dd-6f5f-4eb1-81fe-6f253156b013
+may-19 14:57:40.756 [main] DEBUG nextflow.Session - Run name: sharp_turing
+may-19 14:57:40.757 [main] DEBUG nextflow.Session - Executor pool size: 8
+may-19 14:57:40.770 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+may-19 14:57:40.784 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+may-19 14:57:40.824 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.2 build 5947
+  Created: 13-05-2025 21:58 UTC (16:58 COST)
+  System: Linux 6.8.0-59-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 25410@nathalia-Inspiron-15-3515 [127.0.1.1]
+  CPUs: 8 - Mem: 13.5 GB (436.8 MB) - Swap: 2 GB (2 GB)
+may-19 14:57:40.866 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work [ext2/ext3]
+may-19 14:57:40.867 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
+may-19 14:57:40.885 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+may-19 14:57:40.901 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+may-19 14:57:40.912 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+may-19 14:57:40.958 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+may-19 14:57:40.971 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+may-19 14:57:41.061 [main] DEBUG nextflow.Session - Session start
+may-19 14:57:42.020 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+may-19 14:57:42.282 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+may-19 14:57:42.282 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+may-19 14:57:42.295 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+may-19 14:57:42.308 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=13.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+may-19 14:57:42.313 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+may-19 14:57:42.378 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'mergeOtuTables': maxForks=0; fair=false; array=0
+may-19 14:57:42.496 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_b2c555c5ccf030f7: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf
+may-19 14:57:42.497 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function publishDir([[mode:copy], ./results])
+may-19 14:57:42.524 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+may-19 14:57:42.554 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function publishDir([[mode:copy], ./results])
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:192)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.ChannelOut.publishDir() is applicable for argument types: (LinkedHashMap, String) values: [[mode:copy], ./results]
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:72)
+	at org.codehaus.groovy.vmplugin.v8.IndyGuardsFiltersAndSignatures.unwrap(IndyGuardsFiltersAndSignatures.java:163)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_b2c555c5ccf030f7$_runScript_closure2$_closure4.doCall(Script_b2c555c5ccf030f7:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	... 12 common frames omitted

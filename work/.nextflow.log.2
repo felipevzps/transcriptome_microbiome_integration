@@ -1,0 +1,117 @@
+may-19 14:30:12.346 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf --day_file /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/samples/filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv --night_file /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/samples/filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv
+may-19 14:30:12.498 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
+may-19 14:30:12.541 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+may-19 14:30:12.590 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+may-19 14:30:12.591 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+may-19 14:30:12.597 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+may-19 14:30:12.617 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+may-19 14:30:12.696 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
+may-19 14:30:12.712 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7923f5b3] - activable => nextflow.secret.LocalSecretsProvider@7923f5b3
+may-19 14:30:12.797 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+may-19 14:30:12.830 [main] DEBUG nextflow.cli.CmdRun - Launching `/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf` [loving_perlman] DSL2 - revision: 180af6e758
+may-19 14:30:12.833 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+may-19 14:30:12.834 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+may-19 14:30:12.923 [main] DEBUG nextflow.Session - Session UUID: 326e62ec-5da2-4978-873d-b4b06cf5598e
+may-19 14:30:12.924 [main] DEBUG nextflow.Session - Run name: loving_perlman
+may-19 14:30:12.925 [main] DEBUG nextflow.Session - Executor pool size: 8
+may-19 14:30:12.941 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+may-19 14:30:12.954 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+may-19 14:30:12.999 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.2 build 5947
+  Created: 13-05-2025 21:58 UTC (16:58 COST)
+  System: Linux 6.8.0-59-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 22145@nathalia-Inspiron-15-3515 [127.0.1.1]
+  CPUs: 8 - Mem: 13.5 GB (567.8 MB) - Swap: 2 GB (2 GB)
+may-19 14:30:13.045 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/work [ext2/ext3]
+may-19 14:30:13.046 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
+may-19 14:30:13.065 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+may-19 14:30:13.084 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+may-19 14:30:13.096 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+may-19 14:30:13.145 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+may-19 14:30:13.162 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+may-19 14:30:13.260 [main] DEBUG nextflow.Session - Session start
+may-19 14:30:14.019 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+may-19 14:30:14.297 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+may-19 14:30:14.298 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+may-19 14:30:14.310 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+may-19 14:30:14.323 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=13.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+may-19 14:30:14.328 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+may-19 14:30:14.395 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'mergeOtuTables': maxForks=0; fair=false; array=0
+may-19 14:30:14.479 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: mergeOtuTables
+may-19 14:30:14.483 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+may-19 14:30:14.485 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mergeOtuTables
+may-19 14:30:14.487 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_05cbe07ee8a98094: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf
+may-19 14:30:14.487 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+may-19 14:30:14.487 [main] DEBUG nextflow.Session - Session await
+may-19 14:30:14.830 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+may-19 14:30:14.834 [Task submitter] INFO  nextflow.Session - [03/06562b] Submitted process > mergeOtuTables (Merging OTU tables)
+may-19 14:30:15.471 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: mergeOtuTables (Merging OTU tables); status: COMPLETED; exit: 1; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/work/03/06562b59280409529fa480abc665ab]
+may-19 14:30:15.473 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+may-19 14:30:15.494 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=mergeOtuTables (Merging OTU tables); work-dir=/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/work/03/06562b59280409529fa480abc665ab
+  error [nextflow.exception.ProcessFailedException]: Process `mergeOtuTables (Merging OTU tables)` terminated with an error exit status (1)
+may-19 14:30:15.529 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'mergeOtuTables (Merging OTU tables)'
+
+Caused by:
+  Process `mergeOtuTables (Merging OTU tables)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  python3 - <<EOF
+  import pandas as pd
+  
+  day_df = pd.read_csv("filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv", sep='\t')
+  night_df = pd.read_csv("filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv", sep='\t')
+  
+  day_df = day_df.rename(columns={col: f"exp_day_{col}" for col in day_df.columns if col != "OTU_ID"})
+  night_df = night_df.rename(columns={col: f"exp_night_{col}" for col in night_df.columns if col != "OTU_ID"})
+  
+  merged_df = pd.merge(day_df, night_df, left_on="exp_day_OTU_ID", right_on="exp_night_OTU_ID", how='outer')
+  merged_df["OTU_ID"] = merged_df["exp_day_OTU_ID"].combine_first(merged_df["exp_night_OTU_ID"])
+  merged_df = merged_df.drop(columns=["exp_day_OTU_ID", "exp_night_OTU_ID"])
+  cols = ["OTU_ID"] + [col for col in merged_df.columns if col != "OTU_ID"]
+  merged_df = merged_df[cols]
+  
+  merged_df.to_csv("merged_otu_table.tsv", sep='\t', index=False)
+  EOF
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Traceback (most recent call last):
+    File "<stdin>", line 9, in <module>
+    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/core/reshape/merge.py", line 170, in merge
+      op = _MergeOperation(
+          left_df,
+      ...<10 lines>...
+          validate=validate,
+      )
+    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/core/reshape/merge.py", line 794, in __init__
+      ) = self._get_merge_keys()
+          ~~~~~~~~~~~~~~~~~~~~^^
+    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/core/reshape/merge.py", line 1297, in _get_merge_keys
+      right_keys.append(right._get_label_or_level_values(rk))
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+      raise KeyError(key)
+  KeyError: 'exp_night_OTU_ID'
+
+Work dir:
+  /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/work/03/06562b59280409529fa480abc665ab
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+may-19 14:30:15.547 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `mergeOtuTables (Merging OTU tables)` terminated with an error exit status (1)
+may-19 14:30:15.551 [main] DEBUG nextflow.Session - Session await > all processes finished
+may-19 14:30:15.602 [main] DEBUG nextflow.Session - Session await > all barriers passed
+may-19 14:30:15.602 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+may-19 14:30:15.615 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=612ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+may-19 14:30:15.772 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+may-19 14:30:15.801 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
