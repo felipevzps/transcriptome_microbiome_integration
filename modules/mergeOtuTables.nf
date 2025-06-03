@@ -2,10 +2,6 @@
 
 nextflow.enable.dsl=2
 
-params.day_file     = null
-params.night_file   = null
-params.output_dir   = "./results"
-
 process mergeOtuTables {
 
     tag "Merging OTU tables"
