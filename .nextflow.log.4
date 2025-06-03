@@ -1,73 +1,73 @@
-may-20 13:00:04.912 [main] DEBUG nextflow.cli.Launcher - $> nextflow run modules/corraletionMerged.nf --otu_table results/merged_otu_table.tsv --expression_matrix samples/kremling_expression_v5_counts_filtered_cv_filtered.tsv --output_dir ./results
-may-20 13:00:05.052 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
-may-20 13:00:05.091 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
-may-20 13:00:05.129 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-may-20 13:00:05.130 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-may-20 13:00:05.135 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-may-20 13:00:05.151 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-may-20 13:00:05.223 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
-may-20 13:00:05.240 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@23ee75c5] - activable => nextflow.secret.LocalSecretsProvider@23ee75c5
-may-20 13:00:05.331 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-may-20 13:00:05.351 [main] DEBUG nextflow.cli.CmdRun - Launching `modules/corraletionMerged.nf` [high_jepsen] DSL2 - revision: fc84da5e8f
-may-20 13:00:05.354 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-may-20 13:00:05.355 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-may-20 13:00:05.434 [main] DEBUG nextflow.Session - Session UUID: fad49f31-3ab7-4b16-a324-33ac0bfccc37
-may-20 13:00:05.435 [main] DEBUG nextflow.Session - Run name: high_jepsen
-may-20 13:00:05.436 [main] DEBUG nextflow.Session - Executor pool size: 8
-may-20 13:00:05.448 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-may-20 13:00:05.458 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-may-20 13:00:05.490 [main] DEBUG nextflow.cli.CmdRun - 
+jun-03 13:54:43.492 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ./modules/correlationMerged.nf --otu_table ./results/merged_otu_table.tsv --expression_matrix ./samples/expression_matrix.tsv --output_dir ./results
+jun-03 13:54:43.705 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
+jun-03 13:54:43.747 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+jun-03 13:54:43.785 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+jun-03 13:54:43.786 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+jun-03 13:54:43.791 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+jun-03 13:54:43.809 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+jun-03 13:54:43.902 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
+jun-03 13:54:43.923 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@11841b15] - activable => nextflow.secret.LocalSecretsProvider@11841b15
+jun-03 13:54:44.031 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+jun-03 13:54:44.059 [main] DEBUG nextflow.cli.CmdRun - Launching `./modules/correlationMerged.nf` [backstabbing_celsius] DSL2 - revision: a2105d2aed
+jun-03 13:54:44.063 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+jun-03 13:54:44.064 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+jun-03 13:54:44.183 [main] DEBUG nextflow.Session - Session UUID: e3a2d398-2df4-4d7c-b4fd-936450384ff0
+jun-03 13:54:44.184 [main] DEBUG nextflow.Session - Run name: backstabbing_celsius
+jun-03 13:54:44.185 [main] DEBUG nextflow.Session - Executor pool size: 8
+jun-03 13:54:44.202 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+jun-03 13:54:44.217 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+jun-03 13:54:44.254 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.2 build 5947
   Created: 13-05-2025 21:58 UTC (16:58 COST)
   System: Linux 6.8.0-59-generic
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
   Encoding: UTF-8 (UTF-8)
-  Process: 26422@nathalia-Inspiron-15-3515 [127.0.1.1]
-  CPUs: 8 - Mem: 13.5 GB (194.9 MB) - Swap: 2 GB (2 GB)
-may-20 13:00:05.525 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work [ext2/ext3]
-may-20 13:00:05.526 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
-may-20 13:00:05.544 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-may-20 13:00:05.562 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-may-20 13:00:05.573 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-may-20 13:00:05.621 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-may-20 13:00:05.635 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-may-20 13:00:05.727 [main] DEBUG nextflow.Session - Session start
-may-20 13:00:06.548 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-may-20 13:00:06.713 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-may-20 13:00:06.713 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-may-20 13:00:06.723 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-may-20 13:00:06.734 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=13.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-may-20 13:00:06.737 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-may-20 13:00:06.792 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'correlateOtuExpression': maxForks=0; fair=false; array=0
-may-20 13:00:06.926 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-may-20 13:00:06.926 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-may-20 13:00:06.928 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'plotHeatmap': maxForks=0; fair=false; array=0
-may-20 13:00:06.933 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: correlateOtuExpression, plotHeatmap
-may-20 13:00:06.936 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-may-20 13:00:06.938 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > correlateOtuExpression
-may-20 13:00:06.939 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > plotHeatmap
-may-20 13:00:06.940 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_0424b209936d3bea: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/corraletionMerged.nf
-may-20 13:00:06.941 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-may-20 13:00:06.941 [main] DEBUG nextflow.Session - Session await
-may-20 13:00:07.222 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-may-20 13:00:07.225 [Task submitter] INFO  nextflow.Session - [cd/796c0f] Submitted process > correlateOtuExpression (Correlating OTUs and gene expression)
-may-20 13:05:06.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
-~> TaskHandler[id: 1; name: correlateOtuExpression (Correlating OTUs and gene expression); status: RUNNING; exit: -; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/cd/796c0f4ea6c9ad5082ba49e77e544e]
-may-20 13:10:06.954 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
-~> TaskHandler[id: 1; name: correlateOtuExpression (Correlating OTUs and gene expression); status: RUNNING; exit: -; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/cd/796c0f4ea6c9ad5082ba49e77e544e]
-may-20 13:11:07.438 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: correlateOtuExpression (Correlating OTUs and gene expression); status: COMPLETED; exit: 0; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/cd/796c0f4ea6c9ad5082ba49e77e544e]
-may-20 13:11:07.441 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-may-20 13:11:07.495 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-may-20 13:11:07.496 [Task submitter] INFO  nextflow.Session - [45/4b54e3] Submitted process > plotHeatmap (Plotting correlation heatmap)
-may-20 13:11:07.497 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-may-20 13:11:22.077 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: plotHeatmap (Plotting correlation heatmap); status: COMPLETED; exit: 0; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/45/4b54e33d2216951621539794d736f4]
-may-20 13:11:22.083 [main] DEBUG nextflow.Session - Session await > all processes finished
-may-20 13:11:22.179 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-may-20 13:11:22.179 [main] DEBUG nextflow.Session - Session await > all barriers passed
-may-20 13:11:22.185 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-may-20 13:11:22.186 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-may-20 13:11:22.209 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11m 15s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-may-20 13:11:22.431 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-may-20 13:11:22.472 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-may-20 13:11:22.472 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 38412@nathalia-Inspiron-15-3515 [127.0.1.1]
+  CPUs: 8 - Mem: 13.5 GB (1.3 GB) - Swap: 2 GB (2 GB)
+jun-03 13:54:44.293 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work [ext2/ext3]
+jun-03 13:54:44.294 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
+jun-03 13:54:44.307 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+jun-03 13:54:44.320 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+jun-03 13:54:44.329 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+jun-03 13:54:44.377 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+jun-03 13:54:44.392 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+jun-03 13:54:44.477 [main] DEBUG nextflow.Session - Session start
+jun-03 13:54:45.385 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+jun-03 13:54:45.601 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-03 13:54:45.602 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-03 13:54:45.613 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+jun-03 13:54:45.626 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=13.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+jun-03 13:54:45.631 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+jun-03 13:54:45.698 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'correlateOtuExpression': maxForks=0; fair=false; array=0
+jun-03 13:54:45.818 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun-03 13:54:45.818 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun-03 13:54:45.820 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'plotHeatmap': maxForks=0; fair=false; array=0
+jun-03 13:54:45.826 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: correlateOtuExpression, plotHeatmap
+jun-03 13:54:45.830 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+jun-03 13:54:45.843 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > correlateOtuExpression
+jun-03 13:54:45.844 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > plotHeatmap
+jun-03 13:54:45.845 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_20df4674321cc868: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/correlationMerged.nf
+jun-03 13:54:45.846 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+jun-03 13:54:45.846 [main] DEBUG nextflow.Session - Session await
+jun-03 13:54:46.191 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun-03 13:54:46.195 [Task submitter] INFO  nextflow.Session - [1f/fc5bdf] Submitted process > correlateOtuExpression (correlate)
+jun-03 13:59:45.834 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: correlateOtuExpression (correlate); status: RUNNING; exit: -; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/1f/fc5bdf5d1d1779e0ca31094f07a0bb]
+jun-03 14:04:45.892 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 1; name: correlateOtuExpression (correlate); status: RUNNING; exit: -; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/1f/fc5bdf5d1d1779e0ca31094f07a0bb]
+jun-03 14:06:07.281 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: correlateOtuExpression (correlate); status: COMPLETED; exit: 0; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/1f/fc5bdf5d1d1779e0ca31094f07a0bb]
+jun-03 14:06:07.284 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+jun-03 14:06:07.333 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+jun-03 14:06:07.345 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun-03 14:06:07.347 [Task submitter] INFO  nextflow.Session - [8b/953bcc] Submitted process > plotHeatmap (heatmap)
+jun-03 14:06:34.702 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: plotHeatmap (heatmap); status: COMPLETED; exit: 0; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/8b/953bcc5a97243eb4372c30230ec88d]
+jun-03 14:06:34.713 [main] DEBUG nextflow.Session - Session await > all processes finished
+jun-03 14:06:34.803 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+jun-03 14:06:34.804 [main] DEBUG nextflow.Session - Session await > all barriers passed
+jun-03 14:06:34.810 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+jun-03 14:06:34.810 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+jun-03 14:06:34.820 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11m 48s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+jun-03 14:06:36.487 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+jun-03 14:06:37.365 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+jun-03 14:06:37.366 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

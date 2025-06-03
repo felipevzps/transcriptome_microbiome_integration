@@ -1,128 +1,51 @@
-may-19 15:16:10.639 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf --day_file /home/nathalia/.../filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv --night_file /home/nathalia/.../filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv --output_dir /home/nathalia/.../results
-may-19 15:16:10.814 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
-may-19 15:16:10.856 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
-may-19 15:16:10.895 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-may-19 15:16:10.896 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-may-19 15:16:10.900 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-may-19 15:16:10.920 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-may-19 15:16:11.005 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
-may-19 15:16:11.027 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@23ee75c5] - activable => nextflow.secret.LocalSecretsProvider@23ee75c5
-may-19 15:16:11.131 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-may-19 15:16:11.154 [main] DEBUG nextflow.cli.CmdRun - Launching `/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf` [loquacious_torricelli] DSL2 - revision: af03015dd7
-may-19 15:16:11.157 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-may-19 15:16:11.158 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-may-19 15:16:11.251 [main] DEBUG nextflow.Session - Session UUID: 5a153d96-94c2-496c-8ec1-c29e1d21a3d7
-may-19 15:16:11.252 [main] DEBUG nextflow.Session - Run name: loquacious_torricelli
-may-19 15:16:11.254 [main] DEBUG nextflow.Session - Executor pool size: 8
-may-19 15:16:11.268 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-may-19 15:16:11.280 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-may-19 15:16:11.318 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 25.04.2 build 5947
-  Created: 13-05-2025 21:58 UTC (16:58 COST)
-  System: Linux 6.8.0-59-generic
-  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
-  Encoding: UTF-8 (UTF-8)
-  Process: 28263@nathalia-Inspiron-15-3515 [127.0.1.1]
-  CPUs: 8 - Mem: 13.5 GB (1.1 GB) - Swap: 2 GB (2 GB)
-may-19 15:16:11.358 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work [ext2/ext3]
-may-19 15:16:11.359 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
-may-19 15:16:11.373 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-may-19 15:16:11.388 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-may-19 15:16:11.400 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-may-19 15:16:11.446 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-may-19 15:16:11.460 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-may-19 15:16:11.542 [main] DEBUG nextflow.Session - Session start
-may-19 15:16:12.427 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-may-19 15:16:12.679 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-may-19 15:16:12.680 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-may-19 15:16:12.694 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-may-19 15:16:12.705 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=13.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-may-19 15:16:12.710 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-may-19 15:16:12.801 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'mergeOtuTables': maxForks=0; fair=false; array=0
-may-19 15:16:12.879 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: mergeOtuTables
-may-19 15:16:12.882 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-may-19 15:16:12.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > mergeOtuTables
-may-19 15:16:12.886 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_0382857a3357141e: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf
-may-19 15:16:12.887 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-may-19 15:16:12.887 [main] DEBUG nextflow.Session - Session await
-may-19 15:16:13.058 [Actor Thread 3] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/nathalia/.../filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv -- Cause: java.nio.file.NoSuchFileException: /home/nathalia/.../filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv
-may-19 15:16:13.059 [Actor Thread 3] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /home/nathalia/.../filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv -- Cause: java.nio.file.NoSuchFileException: /home/nathalia/.../filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv
-may-19 15:16:13.189 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-may-19 15:16:13.193 [Task submitter] INFO  nextflow.Session - [d5/61c0a4] Submitted process > mergeOtuTables (Merging OTU tables)
-may-19 15:16:13.720 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: mergeOtuTables (Merging OTU tables); status: COMPLETED; exit: 1; error: -; workDir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/d5/61c0a4990743103d17e3d1363a9b02]
-may-19 15:16:13.722 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-may-19 15:16:13.742 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=mergeOtuTables (Merging OTU tables); work-dir=/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/d5/61c0a4990743103d17e3d1363a9b02
-  error [nextflow.exception.ProcessFailedException]: Process `mergeOtuTables (Merging OTU tables)` terminated with an error exit status (1)
-may-19 15:16:13.784 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'mergeOtuTables (Merging OTU tables)'
-
-Caused by:
-  Process `mergeOtuTables (Merging OTU tables)` terminated with an error exit status (1)
-
-
-Command executed:
-
-  python3 - <<EOF
-  import pandas as pd
-  
-  # Read input files
-  day_df = pd.read_csv("filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv", sep='\t')
-  night_df = pd.read_csv("filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv", sep='\t')
-  
-  # Rename columns except OTU_ID
-  day_df = day_df.rename(columns={col: f"exp_day_{col}" for col in day_df.columns if col != "OTU_ID"})
-  night_df = night_df.rename(columns={col: f"exp_night_{col}" for col in night_df.columns if col != "OTU_ID"})
-  
-  # Merge
-  merged_df = pd.merge(day_df, night_df, on="OTU_ID", how='outer')
-  
-  # Save merged output
-  merged_df.to_csv("merged_otu_table.tsv", sep='\t', index=False)
-  EOF
-
-Command exit status:
-  1
-
-Command output:
-  (empty)
-
-Command error:
-  Traceback (most recent call last):
-    File "<stdin>", line 4, in <module>
-    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
-      return _read(filepath_or_buffer, kwds)
-    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 620, in _read
-      parser = TextFileReader(filepath_or_buffer, **kwds)
-    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
-      self._engine = self._make_engine(f, self.engine)
-                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
-      self.handles = get_handle(
-                     ~~~~~~~~~~^
-          f,
-          ^^
-      ...<6 lines>...
-          storage_options=self.options.get("storage_options", None),
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      )
-      ^
-    File "/home/nathalia/miniconda3/envs/microtrans/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle
-      handle = open(
-          handle,
-      ...<3 lines>...
-          newline="",
-      )
-  FileNotFoundError: [Errno 2] No such file or directory: 'filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv'
-
-Work dir:
-  /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/work/d5/61c0a4990743103d17e3d1363a9b02
-
-Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
-may-19 15:16:13.802 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `mergeOtuTables (Merging OTU tables)` terminated with an error exit status (1)
-may-19 15:16:13.804 [main] DEBUG nextflow.Session - Session await > all processes finished
-may-19 15:16:13.842 [main] DEBUG nextflow.Session - Session await > all barriers passed
-may-19 15:16:13.842 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-may-19 15:16:13.855 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=494ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-may-19 15:16:14.020 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-may-19 15:16:14.042 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+jun-03 12:33:49.802 [main] DEBUG nextflow.cli.Launcher - $> nextflow run modules/correlate_otu_expression.nf --otu_table path/to/otu.tsv --expression_matrix path/to/expr.tsv --output_dir ./
+jun-03 12:33:50.016 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
+jun-03 12:33:50.058 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+jun-03 12:33:50.097 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+jun-03 12:33:50.098 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+jun-03 12:33:50.102 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+jun-03 12:33:50.122 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+jun-03 12:33:50.139 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/nathalia/.nextflow/scm
+jun-03 12:33:50.151 [main] DEBUG nextflow.scm.AssetManager - Listing projects in folder: /home/nathalia/.nextflow/assets
+jun-03 12:33:50.198 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+jun-03 12:33:50.217 [main] INFO  nextflow.cli.CmdRun - Pulling nextflow-io/modules ...
+jun-03 12:33:50.226 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nextflow-io/modules/contents/correlate_otu_expression.nf
+jun-03 12:33:51.501 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repository-content","status":"404"}
+jun-03 12:33:51.517 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Remote resource not found: https://api.github.com/repos/nextflow-io/modules/contents/correlate_otu_expression.nf
+	at nextflow.scm.RepositoryProvider.checkResponse(RepositoryProvider.groovy:252)
+	at nextflow.scm.RepositoryProvider.invoke(RepositoryProvider.groovy:193)
+	at nextflow.scm.RepositoryProvider.memoizedMethodPriv$invokeAndParseResponseString(RepositoryProvider.groovy:301)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.scm.RepositoryProvider$_closure3.doCall(RepositoryProvider.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at groovy.lang.Closure.call(Closure.java:422)
+	at nextflow.scm.RepositoryProvider.invokeAndParseResponse(RepositoryProvider.groovy)
+	at nextflow.scm.GithubRepositoryProvider.readBytes(GithubRepositoryProvider.groovy:117)
+	at nextflow.scm.RepositoryProvider.validateFor(RepositoryProvider.groovy:328)
+	at nextflow.scm.AssetManager.checkValidRemoteRepo(AssetManager.groovy:374)
+	at nextflow.scm.AssetManager.download(AssetManager.groovy:591)
+	at nextflow.cli.CmdRun.getScriptFile0(CmdRun.groovy:591)
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:524)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:326)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)

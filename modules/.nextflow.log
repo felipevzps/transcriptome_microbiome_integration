@@ -1,47 +1,73 @@
-may-19 13:33:15.103 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf --day_file /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/samples/filtered_otu_table_day_filtered_rel_abund_cv_filtered.tsv --night_file /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/samples/filtered_otu_table_night_filtered_rel_abund_cv_filtered.tsv
-may-19 13:33:15.389 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
-may-19 13:33:15.479 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
-may-19 13:33:15.561 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-may-19 13:33:15.565 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-may-19 13:33:15.576 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-may-19 13:33:15.612 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-may-19 13:33:15.785 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
-may-19 13:33:15.839 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7923f5b3] - activable => nextflow.secret.LocalSecretsProvider@7923f5b3
-may-19 13:33:16.052 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-may-19 13:33:16.094 [main] DEBUG nextflow.cli.CmdRun - Launching `/home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf` [high_colden] DSL2 - revision: e2127850b5
-may-19 13:33:16.100 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-may-19 13:33:16.101 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-may-19 13:33:16.276 [main] DEBUG nextflow.Session - Session UUID: 782fb479-529f-49a4-aeb8-c1cb0556cfa6
-may-19 13:33:16.278 [main] DEBUG nextflow.Session - Run name: high_colden
-may-19 13:33:16.280 [main] DEBUG nextflow.Session - Executor pool size: 8
-may-19 13:33:16.306 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-may-19 13:33:16.331 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-may-19 13:33:16.402 [main] DEBUG nextflow.cli.CmdRun - 
+jun-03 12:40:38.119 [main] DEBUG nextflow.cli.Launcher - $> nextflow run correlationMerged.nf
+jun-03 12:40:38.279 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.2
+jun-03 12:40:38.323 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nathalia/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.2,nf-wave@1.12.1
+jun-03 12:40:38.362 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+jun-03 12:40:38.363 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+jun-03 12:40:38.368 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+jun-03 12:40:38.387 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+jun-03 12:40:38.529 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+jun-03 12:40:38.552 [main] DEBUG nextflow.cli.CmdRun - Launching `correlationMerged.nf` [shrivelled_almeida] DSL2 - revision: c40eb0e073
+jun-03 12:40:38.555 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+jun-03 12:40:38.556 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+jun-03 12:40:38.666 [main] DEBUG nextflow.Session - Session UUID: 3cf06ddb-f6ef-4476-a38e-f5b5d42f3e30
+jun-03 12:40:38.667 [main] DEBUG nextflow.Session - Run name: shrivelled_almeida
+jun-03 12:40:38.668 [main] DEBUG nextflow.Session - Executor pool size: 8
+jun-03 12:40:38.682 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+jun-03 12:40:38.693 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+jun-03 12:40:38.726 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.2 build 5947
   Created: 13-05-2025 21:58 UTC (16:58 COST)
   System: Linux 6.8.0-59-generic
   Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
   Encoding: UTF-8 (UTF-8)
-  Process: 17455@nathalia-Inspiron-15-3515 [127.0.1.1]
-  CPUs: 8 - Mem: 13.5 GB (1.5 GB) - Swap: 2 GB (2 GB)
-may-19 13:33:16.485 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/work [ext2/ext3]
-may-19 13:33:16.487 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
-may-19 13:33:16.517 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-may-19 13:33:16.543 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-may-19 13:33:16.565 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-may-19 13:33:16.662 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-may-19 13:33:16.696 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-may-19 13:33:16.881 [main] DEBUG nextflow.Session - Session start
-may-19 13:33:18.112 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-may-19 13:33:18.200 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: mergeOtuTables
-may-19 13:33:18.207 [main] DEBUG nextflow.Session - Igniting dataflow network (0)
-may-19 13:33:18.209 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_6cd8e04345c253cf: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/mergeOtuTables.nf
-may-19 13:33:18.210 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-may-19 13:33:18.210 [main] DEBUG nextflow.Session - Session await
-may-19 13:33:18.210 [main] DEBUG nextflow.Session - Session await > all processes finished
-may-19 13:33:18.210 [main] DEBUG nextflow.Session - Session await > all barriers passed
-may-19 13:33:18.237 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
-may-19 13:33:18.387 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-may-19 13:33:18.474 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-may-19 13:33:18.475 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+  Process: 28744@nathalia-Inspiron-15-3515 [127.0.1.1]
+  CPUs: 8 - Mem: 13.5 GB (3.7 GB) - Swap: 2 GB (2 GB)
+jun-03 12:40:38.766 [main] DEBUG nextflow.Session - Work-dir: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/work [ext2/ext3]
+jun-03 12:40:38.767 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/bin
+jun-03 12:40:38.788 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+jun-03 12:40:38.805 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+jun-03 12:40:38.817 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+jun-03 12:40:38.874 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+jun-03 12:40:38.895 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+jun-03 12:40:38.981 [main] DEBUG nextflow.Session - Session start
+jun-03 12:40:39.864 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+jun-03 12:40:39.887 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nathalia/.nextflow/secrets/store.json
+jun-03 12:40:39.900 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7f0b93b4] - activable => nextflow.secret.LocalSecretsProvider@7f0b93b4
+jun-03 12:40:39.956 [main] WARN  nextflow.script.ScriptBinding - Access to undefined parameter `otu_table` -- Initialise it to a default value eg. `params.otu_table = some_value`
+jun-03 12:40:39.970 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_41a7819c8b62c284: /home/nathalia/Documentos/microbiome_transcriptomics/transcriptome_microbiome_integration/modules/correlationMerged.nf
+jun-03 12:40:39.971 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing `fromPath` parameter
+jun-03 12:40:40.000 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Missing `fromPath` parameter
+	at nextflow.Channel.fromPath(Channel.groovy:292)
+	at nextflow.Channel.fromPath(Channel.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1586)
+	at groovy.lang.DelegatingMetaClass.invokeStaticMethod(DelegatingMetaClass.java:173)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_41a7819c8b62c284$_runScript_closure1$_closure4.doCall(Script_41a7819c8b62c284:9)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
