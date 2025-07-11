@@ -1,6 +1,6 @@
 nextflow.enable.dsl=2
 
-process correlateOtuExpression {
+process correlationMerged {
 
     tag 'correlate'
 

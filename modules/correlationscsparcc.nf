@@ -1,4 +1,4 @@
-process correlateOtuExpression {
+process correlationscsparcc {
 
     tag 'sparcc_fastspar'
     cpus 4
