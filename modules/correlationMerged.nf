@@ -4,7 +4,7 @@ process correlationMerged {
 
     tag 'correlate'
 
-    publishDir "${output_dir}", mode: 'copy'
+    publishDir "${output_dir}", mode: 'symlink'
 
     input:
         path otu_table

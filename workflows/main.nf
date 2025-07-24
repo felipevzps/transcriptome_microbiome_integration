@@ -12,16 +12,14 @@ workflow {
     // Input channels
     Channel.fromPath(params.day_file)    .set { ch_day_file }
     Channel.fromPath(params.night_file)  .set { ch_night_file }
-    Channel.value(params.out_dir)     .set { ch_output_dir }
-    Channel.fromPath(params.expression_matrix) .set { ch_expr }
 
     // Run merge process
-    mergeOtuTables(ch_day_file, ch_night_file, ch_output_dir)
+    mergeOtuTables(ch_day_file, ch_night_file)
 
     // Run correlationMerged
-    correlationMerged(mergeOtuTables.out.merged_otu_file, ch_expr, ch_output_dir)
+//    correlationMerged(mergeOtuTables.out.merged_otu_file, ch_expr, ch_output_dir)
 
     // Run correlationscsparcc
-    correlationscsparcc(mergeOtuTables.out.merged_otu_file, ch_expr, ch_output_dir)
+//    correlationscsparcc(mergeOtuTables.out.merged_otu_file, ch_expr, ch_output_dir)
 }
 
