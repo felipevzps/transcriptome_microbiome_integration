@@ -1,4 +1,4 @@
-process correlateOtuExpression {
+process correlationscsparcc {
 
     tag 'sparcc_fastspar'
     cpus 4
@@ -6,7 +6,7 @@ process correlateOtuExpression {
     publishDir params.output_dir, mode: 'copy'
 
     input:
-        path otu_table
+        path merged_otu_file
         path expression_matrix
 
     output:
