@@ -1,0 +1,4 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	a7/9c3113	3629037	mergeOtuTables (Merging OTU tables)	COMPLETED	0	2025-08-06 17:10:44.442	863ms	774ms	130.7%	13.3 MB	26 MB	12.6 MB	491.8 KB
+2	18/78ceff	3629152	correlationMerged (correlate)	COMPLETED	0	2025-08-06 17:10:45.405	5.8s	5.5s	105.3%	134.4 MB	950.5 MB	23.6 MB	110.1 KB
+3	71/bf1c1e	3629614	plotHeatmap (heatmap)	COMPLETED	0	2025-08-06 17:10:51.240	3.4s	3.3s	113.3%	185.7 MB	1.1 GB	57.9 MB	3.2 MB
