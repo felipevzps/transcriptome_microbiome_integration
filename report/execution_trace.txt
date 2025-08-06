@@ -1,4 +1,5 @@
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-1	a7/9c3113	3629037	mergeOtuTables (Merging OTU tables)	COMPLETED	0	2025-08-06 17:10:44.442	863ms	774ms	130.7%	13.3 MB	26 MB	12.6 MB	491.8 KB
-2	18/78ceff	3629152	correlationMerged (correlate)	COMPLETED	0	2025-08-06 17:10:45.405	5.8s	5.5s	105.3%	134.4 MB	950.5 MB	23.6 MB	110.1 KB
-3	71/bf1c1e	3629614	plotHeatmap (heatmap)	COMPLETED	0	2025-08-06 17:10:51.240	3.4s	3.3s	113.3%	185.7 MB	1.1 GB	57.9 MB	3.2 MB
+1	7c/2b953c	3657401	mergeOtuTables (Merging OTU tables)	CACHED	0	2025-08-06 19:11:28.884	2.6s	725ms	136.1%	13.8 MB	26.2 MB	15 MB	588.7 KB
+3	c6/70b6c8	3657711	correlationMerged (correlate)	CACHED	0	2025-08-06 19:11:59.531	7.6s	5.8s	102.6%	127.3 MB	757.2 MB	27.2 MB	218.2 KB
+4	60/186b75	3658370	plotHeatmap (heatmap)	CACHED	0	2025-08-06 19:13:11.768	6.9s	5.3s	72.1%	205.4 MB	1.1 GB	67.8 MB	549 KB
+2	3c/ae381c	3663023	correlationscsparxcc (cross_correlation_SparXCC)	COMPLETED	0	2025-08-06 19:36:26.387	19s	11.4s	174.3%	318.4 MB	2.4 GB	88.1 MB	10 MB

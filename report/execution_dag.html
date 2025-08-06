@@ -44,13 +44,20 @@ flowchart TB
     v5(["plotHeatmap"])
     subgraph " "
     v6[" "]
+    v8[" "]
+    v9[" "]
     end
+    v7(["correlationscsparxcc"])
     v0 --> v3
     v1 --> v3
     v2 --> v4
+    v2 --> v7
     v3 --> v4
+    v3 --> v7
     v4 --> v5
     v5 --> v6
+    v7 --> v9
+    v7 --> v8
 
 </pre>
 <script type="module">
