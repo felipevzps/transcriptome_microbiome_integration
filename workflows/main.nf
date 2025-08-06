@@ -2,10 +2,10 @@
 nextflow.enable.dsl=2
 
 // Include modules
-include { mergeOtuTables      } from '../modules/mergeOtuTables.nf'
-include { correlationMerged   } from '../modules/correlationMerged.nf'
-include { plotHeatmap         } from '../modules/plotHeatmap.nf'
-include { correlationscsparcc } from '../modules/correlationscsparcc.nf'
+include { mergeOtuTables       } from '../modules/mergeOtuTables.nf'
+include { correlationMerged    } from '../modules/correlationMerged.nf'
+include { plotHeatmap          } from '../modules/plotHeatmap.nf'
+include { correlationscsparxcc } from '../modules/correlationscsparxcc.nf'
 
 workflow {
 
@@ -23,6 +23,6 @@ workflow {
     // Plot correlation heatmap 
     plotHeatmap(correlationMerged.out.otu_gene_correlation_file)
 
-    // Run correlationscsparcc
-    //correlationscsparcc(mergeOtuTables.out.merged_otu_file, ch_expr)
+    // Run correlationscsparxcc 
+    correlationscsparxcc(mergeOtuTables.out.merged_otu_file, ch_expr)
 }
