@@ -3,15 +3,13 @@ process correlationscsparcc {
     tag 'sparcc_fastspar'
     cpus 4
 
-    publishDir params.output_dir, mode: 'copy'
-
     input:
-        path merged_otu_file
-        path expression_matrix
+        path(merged_otu_file)
+        path(expression_matrix)
 
     output:
-        path 'sparcc_correlation.tsv' emit: sparcc_correlation_file
-        path 'sparcc_heatmap.png' emit: sparcc_heatmap_file
+        path('sparcc_correlation.tsv')
+        path('sparcc_heatmap.png')
 
     script:
     """
@@ -23,7 +21,7 @@ import numpy as np
 import sys
 
 try:
-    otu_df  = pd.read_csv("${otu_table}", sep="\\t").set_index("OTU_ID")
+    otu_df  = pd.read_csv("${merged_otu_file}", sep="\\t").set_index("OTU_ID")
     expr_df = pd.read_csv("${expression_matrix}", sep="\\t").set_index("Name")
 except Exception as e:
     print("Error reading input files:", e)

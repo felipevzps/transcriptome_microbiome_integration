@@ -1,25 +1,28 @@
 #!/usr/bin/env nextflow
-
 nextflow.enable.dsl=2
 
 // Include modules
-include { mergeOtuTables }        from '../modules/mergeOtuTables.nf'
-include { correlationMerged }     from '../modules/correlationMerged.nf'
-include { correlationscsparcc }   from '../modules/correlationscsparcc.nf'
+include { mergeOtuTables       } from '../modules/mergeOtuTables.nf'
+include { correlationMerged    } from '../modules/correlationMerged.nf'
+include { plotHeatmap          } from '../modules/plotHeatmap.nf'
+include { correlationscsparxcc } from '../modules/correlationscsparxcc.nf'
 
 workflow {
 
     // Input channels
-    Channel.fromPath(params.day_file)    .set { ch_day_file }
-    Channel.fromPath(params.night_file)  .set { ch_night_file }
-
+    Channel.fromPath(params.day_file)           .set { ch_day_file }
+    Channel.fromPath(params.night_file)         .set { ch_night_file }
+    Channel.fromPath(params.expression_matrix)  .set { ch_expr }
+    
     // Run merge process
     mergeOtuTables(ch_day_file, ch_night_file)
 
     // Run correlationMerged
-//    correlationMerged(mergeOtuTables.out.merged_otu_file, ch_expr, ch_output_dir)
+    correlationMerged(mergeOtuTables.out.merged_otu_file, ch_expr)
 
-    // Run correlationscsparcc
-//    correlationscsparcc(mergeOtuTables.out.merged_otu_file, ch_expr, ch_output_dir)
+    // Plot correlation heatmap 
+    plotHeatmap(correlationMerged.out.otu_gene_correlation_file)
+
+    // Run correlationscsparxcc 
+    correlationscsparxcc(mergeOtuTables.out.merged_otu_file, ch_expr)
 }
-
