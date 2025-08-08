@@ -1,10 +1,9 @@
-# Microbiome Transcriptomic Integration 
+# Transcriptome-Microbiome Integration
 [![Nextflow](https://img.shields.io/badge/workflow-nextflow-blue)](https://www.nextflow.io/) [![Status](https://img.shields.io/badge/status-active-success.svg)]() [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  
 
-This workflow pipeline does the inegration of metataxonomic and transcriptomics data.
+This Nextflow pipeline automates the integration of transcriptomic expression profiles and microbiome abundance data (OTU tables), performing cross-correlation analysis to uncover potential associations between host transcriptome-microbiome associations.
 
 ---
-
 # prerequisites
 
 This pipeline requires Nextflow 25.04.2 or higher.  
