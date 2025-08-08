@@ -1,10 +1,13 @@
-# nextflow logs 
+# nextflow logs
 *.nextflow
 .nextflow.log*
 work/
 
-# large files 
+# large files
 results/
+
+# module reports
+report/
 
 # downloaded conda environments (from envs/*.yml)
 conda-cache/
