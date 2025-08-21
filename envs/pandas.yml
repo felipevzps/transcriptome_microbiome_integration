@@ -2,4 +2,4 @@ channels:
   - conda-forge
 dependencies:
   - conda-forge::python=3.13.3
-  - conda-forge::pandas
+  - conda-forge::pandas=2.3.1
