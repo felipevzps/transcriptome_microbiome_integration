@@ -3,6 +3,14 @@
 # Load required libraries
 library(CompoCor)
 library(ggplot2)
+library(reshape2)
+
+matrix_to_edgelist <- function(mat, min_cor){
+	edge_list <- melt(mat, varnames = c("OTU", "gene"), value.name = "cor")
+	edge_list <- edge_list[edge_list$OTU != edge_list$gene, ]
+	edge_list_filtered <- edge_list[abs(edge_list$cor) > min_cor, ]
+	return(edge_list_filtered)
+}
 
 # Parse command line arguments
 args <- commandArgs(trailingOnly = TRUE)
@@ -137,6 +145,14 @@ sparxcc_night <- SparXCC_base(
 # Save night results
 write.table(sparxcc_night, file = "SparXCC_output_night_common_samples.txt", sep = "\t", row.names = T)
 cat("Night results saved to: SparXCC_output_night_common_samples.txt\n")
+
+# Save correlations as edge lists
+day_edge_list <- matrix_to_edgelist(sparxcc_day$cor, 0.1)
+night_edge_list <- matrix_to_edgelist(sparxcc_night$cor, 0.1)
+# write files
+write.table(file = "edgelist_day.csv", x = day_edge_list, sep = ",", quote = F, row.names = F )
+write.table(file = "edgelist_night.csv", x = night_edge_list, sep = ",", quote = F, row.names = F )
+
 
 # Create visualization if edge list files are available
 create_visualizations <- function() {
