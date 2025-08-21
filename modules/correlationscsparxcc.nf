@@ -9,6 +9,8 @@ process correlationscsparxcc {
     output:
         path("SparXCC_output_day_common_samples.txt"),   emit: sparxcc_day_correlation_matrix
         path("SparXCC_output_night_common_samples.txt"), emit: sparxcc_night_correlation_matrix
+        path("edgelist_day.csv"), emit: edgelist_day
+        path("edgelist_night.csv"), emit: edgelist_night
 
     script:
         """
